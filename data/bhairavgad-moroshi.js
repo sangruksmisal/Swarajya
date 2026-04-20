@@ -8,14 +8,14 @@ window.FORT_DATA = {
   "altitude_m": 1050,
   "altitude_ft": 3445,
   "height_above_valley_m": 473,
-  "district": "Ahmednagar",
+  "district": "Ahilyanagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 18.5200, "lng": 73.8500 },
   "distance_from_pune_km": 300,
   "direction_from_pune": "southwest",
   "mountain_range": "Sahyadri (Western Ghats)",
   "unesco": false,
-  "famous_for": "One of three Bhairavgads in Maharashtra — this one in Ahmednagar above the Moroshi valley.",
+  "famous_for": "One of three Bhairavgads in Maharashtra — this one in Ahilyanagar above the Moroshi valley.",
   "built_by": "Maratha period",
   "built_year_approx": "17th-18th century",
   "maratha_period_role": "general",
@@ -26,7 +26,7 @@ window.FORT_DATA = {
   "nearby_forts": ["rajmachi","lohgad","visapur"],
 
   "strategic_summary": {
-    "en": "One of three Bhairavgads in Maharashtra — this one in Ahmednagar above the Moroshi valley. Rising 1050 m (3445 ft) above sea level in Ahmednagar, the fort commands the surrounding terrain and was a valuable position in the Maratha administrative and defensive network. The fort is today in moderate condition and is accessible to trekkers."
+    "en": "One of three Bhairavgads in Maharashtra — this one in Ahilyanagar above the Moroshi valley. Rising 1050 m (3445 ft) above sea level in Ahilyanagar, the fort commands the surrounding terrain and was a valuable position in the Maratha administrative and defensive network. The fort is today in moderate condition and is accessible to trekkers."
   },
 
   "visitor_info": {
@@ -59,7 +59,7 @@ window.FORT_DATA = {
       { "label": "National Emergency Helpline", "number": "112", "note": "Pan-India emergency number" }
     ],
     "nearest_medical": {
-      "village": "Ahmednagar",
+      "village": "Ahilyanagar",
       "facility": "Nearest District Hospital",
       "distance_km": 30,
       "phone": null,
@@ -69,7 +69,7 @@ window.FORT_DATA = {
 
   "trek": {
     "grade": "Hard",
-    "base_village": "Village near Ahmednagar",
+    "base_village": "Village near Ahilyanagar",
     "duration_hours": "4-6 hours return",
     "best_season": "Oct – Feb",
     "landmarks": ["Fort entrance", "Fort walls", "Summit views", "Surrounding valley panorama"]
@@ -85,13 +85,13 @@ window.FORT_DATA = {
   "memorials": [],
 
   "timeline": [
-    { "year": "17th century", "event_en": "Bhairavgad (Moroshi) established as part of the Maratha fort network in Ahmednagar." },
+    { "year": "17th century", "event_en": "Bhairavgad (Moroshi) established as part of the Maratha fort network in Ahilyanagar." },
     { "year": "18th century", "event_en": "Fort maintained under the Maratha Confederacy as part of the regional defensive and administrative system." },
     { "year": "1818", "event_en": "British East India Company takes control. Fort decommissioned." }
   ],
 
   "heroic_tale": {
-    "title_en": "One of Three: Bhairavgad of Moroshi in the Ahmednagar Sahyadri",
-    "body_en": "This Bhairavgad rises above the Moroshi valley in Ahmednagar district — one of three forts in Maharashtra that share the name of Bhairava, the fierce threshold guardian of Shaivite tradition.\n\nThe Ahmednagar Sahyadri in which this Bhairavgad stands is the range near the Kalsubai-Harishchandragad massif — the highest terrain in the northern Western Ghats, where peaks above 1,400 metres dominate the landscape and the Pravarа and Mula rivers begin their journey east toward the Godavari system.\n\nBhairavgad Moroshi's position in the Moroshi valley area gave it a specific role in the Ahmednagar Sahyadri network — watching the valley approaches in a region that was part of the contested frontier between the Maratha Sahyadri territory and the Nizam Shahi-Mughal influence in the Ahmednagar district.\n\nThe Ahmednagar region had a complex history: the Nizam Shahi Sultanate of Ahmednagar was one of the Deccan Sultanates that Chhatrapati Shivaji Maharaj had to contend with, and Aurangzeb himself had been the Mughal governor of Ahmednagar before becoming emperor. The forts of the Ahmednagar Sahyadri were part of the Maratha response to this historically complex zone.\n\n«QUOTE»The fierce guardian at the threshold asks no questions. He simply holds.«TRANSLATION»Bhairavgad of Moroshi held the Ahmednagar Sahyadri threshold."
+    "title_en": "One of Three: Bhairavgad of Moroshi in the Ahilyanagar Sahyadri",
+    "body_en": "This Bhairavgad rises above the Moroshi valley in Ahilyanagar district — one of three forts in Maharashtra that share the name of Bhairava, the fierce threshold guardian of Shaivite tradition.\n\nThe Ahilyanagar Sahyadri in which this Bhairavgad stands is the range near the Kalsubai-Harishchandragad massif — the highest terrain in the northern Western Ghats, where peaks above 1,400 metres dominate the landscape and the Pravarа and Mula rivers begin their journey east toward the Godavari system.\n\nBhairavgad Moroshi's position in the Moroshi valley area gave it a specific role in the Ahilyanagar Sahyadri network — watching the valley approaches in a region that was part of the contested frontier between the Maratha Sahyadri territory and the Nizam Shahi-Mughal influence in the Ahilyanagar district.\n\nThe Ahilyanagar region had a complex history: the Nizam Shahi Sultanate of Ahilyanagar was one of the Deccan Sultanates that Chhatrapati Shivaji Maharaj had to contend with, and Aurangzeb himself had been the Mughal governor of Ahilyanagar before becoming emperor. The forts of the Ahilyanagar Sahyadri were part of the Maratha response to this historically complex zone.\n\n«QUOTE»The fierce guardian at the threshold asks no questions. He simply holds.«TRANSLATION»Bhairavgad of Moroshi held the Ahilyanagar Sahyadri threshold."
   }
 };

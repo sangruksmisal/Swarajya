@@ -166,7 +166,7 @@ window.FORT_DATA = {
     },
     {
       "year": "15th–16th century",
-      "event_en": "Fort passes through the Bahamani Sultanate, the Nizam Shahi of Ahmednagar, and the Adil Shahi of Bijapur."
+      "event_en": "Fort passes through the Bahamani Sultanate, the Nizam Shahi of Ahilyanagar, and the Adil Shahi of Bijapur."
     },
     {
       "year": "1647",

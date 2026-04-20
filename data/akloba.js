@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 950,
   "altitude_ft": 3117,
   "height_above_valley_m": 500,
-  "district": "Ahmednagar",
+  "district": "Ahilyanagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.6500, "lng": 74.0200 },
   "distance_from_pune_km": 150,
@@ -29,7 +29,7 @@ window.FORT_DATA = {
 
 
   "strategic_summary": {
-    "en": "Akloba Fort is a remote hill fort in the Akole taluka of Ahmednagar district, situated in the northeastern Sahyadri near the Harishchandragad massif. The fort stands at approximately 950 metres in dense forested terrain, controlling the passes and hill routes in this section of the Sahyadri between the Konkan to the west and the Ahmednagar plateau to the east. The Akole region is part of the Kalsubai-Harishchandragad wildlife sanctuary, an ecologically significant forest zone. Akloba Fort is one of the lesser-visited forts in the Ahmednagar range — its remoteness means it has escaped the footfall of more popular neighbouring summits, but its forest setting and ridge position make it a rewarding destination for experienced trekkers. The fort is part of the network of Sahyadri fortifications that the Marathas maintained across the Ahmednagar-Nashik borderland."
+    "en": "Akloba Fort is a remote hill fort in the Akole taluka of Ahilyanagar district, situated in the northeastern Sahyadri near the Harishchandragad massif. The fort stands at approximately 950 metres in dense forested terrain, controlling the passes and hill routes in this section of the Sahyadri between the Konkan to the west and the Ahilyanagar plateau to the east. The Akole region is part of the Kalsubai-Harishchandragad wildlife sanctuary, an ecologically significant forest zone. Akloba Fort is one of the lesser-visited forts in the Ahilyanagar range — its remoteness means it has escaped the footfall of more popular neighbouring summits, but its forest setting and ridge position make it a rewarding destination for experienced trekkers. The fort is part of the network of Sahyadri fortifications that the Marathas maintained across the Ahilyanagar-Nashik borderland."
   },
 
   "visitor_info": {
@@ -59,7 +59,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Akole Police Station (Ahmednagar)",
+        "label": "Akole Police Station (Ahilyanagar)",
         "number": "02426-242033",
         "note": "VERIFY before publishing"
       },
@@ -125,7 +125,7 @@ window.FORT_DATA = {
   "timeline": [
     {
       "year": "Medieval period",
-      "event_en": "Akloba Fort established in the northeastern Sahyadri, part of the network of hill forts guarding the Konkan-Deccan passes in the Akole-Ahmednagar borderland."
+      "event_en": "Akloba Fort established in the northeastern Sahyadri, part of the network of hill forts guarding the Konkan-Deccan passes in the Akole-Ahilyanagar borderland."
     },
     {
       "year": "Maratha period",

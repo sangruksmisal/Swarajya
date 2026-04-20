@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 1297,
   "altitude_ft": 4255,
   "height_above_valley_m": 700,
-  "district": "Ahmednagar",
+  "district": "Ahilyanagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.5833, "lng": 73.7667 },
   "distance_from_pune_km": 160,
@@ -29,7 +29,7 @@ window.FORT_DATA = {
 
 
   "strategic_summary": {
-    "en": "Ratangad Fort stands in the Kalsubai range of the Sahyadri at 1,297 metres, overlooking the Pravara river valley and the Bhandardara reservoir below. The fort guards the headwaters of the Pravara river — a major river of the Ahmednagar region that flows through the Deccan plateau — and commands the approaches from the Konkan below to the Deccan above via the mountain passes near Bhandardara. The fort's high position in the Kalsubai range, which contains the highest peaks in Maharashtra, made it an important watch and garrison point along the northwestern Sahyadri. The Bhandardara area is today famous for the Wilson Dam (one of India's oldest arch dams) and Arthur Lake, and the fort trek through monsoon-fed forests and along the lake shore is one of the most scenic in the Sahyadri. The fort retains a well-preserved carved gateway — the Neel Darwaza — and is known for the beautiful 'eye' window carved into the cliff face of the Ratangad massif."
+    "en": "Ratangad Fort stands in the Kalsubai range of the Sahyadri at 1,297 metres, overlooking the Pravara river valley and the Bhandardara reservoir below. The fort guards the headwaters of the Pravara river — a major river of the Ahilyanagar region that flows through the Deccan plateau — and commands the approaches from the Konkan below to the Deccan above via the mountain passes near Bhandardara. The fort's high position in the Kalsubai range, which contains the highest peaks in Maharashtra, made it an important watch and garrison point along the northwestern Sahyadri. The Bhandardara area is today famous for the Wilson Dam (one of India's oldest arch dams) and Arthur Lake, and the fort trek through monsoon-fed forests and along the lake shore is one of the most scenic in the Sahyadri. The fort retains a well-preserved carved gateway — the Neel Darwaza — and is known for the beautiful 'eye' window carved into the cliff face of the Ratangad massif."
   },
 
   "visitor_info": {
@@ -59,7 +59,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Akole Police Station (Ahmednagar)",
+        "label": "Akole Police Station (Ahilyanagar)",
         "number": "02426-242033",
         "note": "VERIFY before publishing"
       },

@@ -147,7 +147,7 @@ window.FORT_DATA = {
     },
     {
       "year": "1489",
-      "event_en": "With the fragmentation of the Bahamani Sultanate, Lohgad passes to the Nizam Shahi of Ahmednagar, then to the Adil Shahi of Bijapur."
+      "event_en": "With the fragmentation of the Bahamani Sultanate, Lohgad passes to the Nizam Shahi of Ahilyanagar, then to the Adil Shahi of Bijapur."
     },
     {
       "year": "1648",

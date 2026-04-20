@@ -522,10 +522,10 @@ window.FORTS = [
   },
   {
     id: 'ahmednagar',
-    name_en: 'Ahmednagar Fort',
-    alternate_names: ['Ahmednagar Killa', 'Nagar Fort', 'Bhainga Fort'],
+    name_en: 'Ahilyanagar Fort',
+    alternate_names: ['Ahilyanagar Killa', 'Nagar Fort', 'Bhainga Fort'],
     type: 'hill',
-    district: 'Ahmednagar',
+    district: 'Ahilyanagar',
     state: 'Maharashtra',
     coordinates: { lat: 19.0948, lng: 74.7480 },
     altitude_m: 700,
@@ -542,7 +542,7 @@ window.FORTS = [
     name_en: 'Harishchandragad Fort',
     alternate_names: ['Harishchandra Gad'],
     type: 'hill',
-    district: 'Ahmednagar',
+    district: 'Ahilyanagar',
     state: 'Maharashtra',
     coordinates: { lat: 19.3883, lng: 73.7736 },
     altitude_m: 1422,
@@ -559,7 +559,7 @@ window.FORTS = [
     name_en: 'Ratangad Fort',
     alternate_names: ['Ratan Fort', 'Bhandardara Fort'],
     type: 'hill',
-    district: 'Ahmednagar',
+    district: 'Ahilyanagar',
     state: 'Maharashtra',
     coordinates: { lat: 19.5833, lng: 73.7667 },
     altitude_m: 1297,
@@ -576,7 +576,7 @@ window.FORTS = [
     name_en: 'Akloba Fort',
     alternate_names: ['Aklai Fort'],
     type: 'hill',
-    district: 'Ahmednagar',
+    district: 'Ahilyanagar',
     state: 'Maharashtra',
     coordinates: { lat: 19.6500, lng: 74.0200 },
     altitude_m: 950,
@@ -593,7 +593,7 @@ window.FORTS = [
     name_en: 'Pabargad Fort',
     alternate_names: ['Pabar Fort'],
     type: 'hill',
-    district: 'Ahmednagar',
+    district: 'Ahilyanagar',
     state: 'Maharashtra',
     coordinates: { lat: 19.4500, lng: 74.2500 },
     altitude_m: 1100,
@@ -603,7 +603,7 @@ window.FORTS = [
     vehicle_access: true,
     best_season: 'Oct – Feb',
     path: 'forts/pabargad/index.html',
-    tagline: 'The ridge watcher — filling the gap in the northern Sahyadri arc between Nashik and Ahmednagar.'
+    tagline: 'The ridge watcher — filling the gap in the northern Sahyadri arc between Nashik and Ahilyanagar.'
   },
   {
     id: 'daulatabad',
@@ -625,7 +625,7 @@ window.FORTS = [
   {
     id: 'killarrak',
     name_en: 'Killa Arrak',
-    alternate_names: ['Aurangabad Fort', 'Aurangabad Killa'],
+    alternate_names: ['Chhatrapati Sambhajinagar Fort', 'Chhatrapati Sambhajinagar Killa'],
     type: 'hill',
     district: 'Sambhajinagar',
     state: 'Maharashtra',
@@ -1746,9 +1746,9 @@ window.FORTS = [
   ,{ id: 'songad',       name_en: 'Songad Fort',        alternate_names: [], type: 'hill',    district: 'Kolhapur',        state: 'Maharashtra', altitude_m: 780,  difficulty: 'moderate', family_friendly: false, vehicle_access: false, best_season: 'Nov – Feb', tagline: 'A Kolhapur Sahyadri fort in the Chandgad area.', coordinates: { lat: 15.98, lng: 74.22 }, path: "forts/songad/index.html", published: true }
   ,{ id: 'chambhargad',  name_en: 'Chambhargad Fort',   alternate_names: [], type: 'hill',    district: 'Kolhapur',        state: 'Maharashtra', altitude_m: 760,  difficulty: 'moderate', family_friendly: false, vehicle_access: false, best_season: 'Nov – Feb', tagline: 'A Kolhapur fort in the southern Sahyadri ranges.', coordinates: { lat: 16.06, lng: 73.95 }, path: "forts/chambhargad/index.html", published: true }
 
-  /* ── Ahmednagar / Northern Districts (additional) ── */
-  ,{ id: 'bhairavgad-moroshi', name_en: 'Bhairavgad (Moroshi)', alternate_names: [], type: 'hill', district: 'Ahmednagar', state: 'Maharashtra', altitude_m: 1050, difficulty: 'hard', family_friendly: false, vehicle_access: false, best_season: 'Oct – Feb', tagline: 'One of three Bhairavgads in Maharashtra — this one in Ahmednagar above the Moroshi valley.', coordinates: { lat: 18.5200, lng: 73.8500 }, path: "forts/bhairavgad-moroshi/index.html", published: true }
-  ,{ id: 'hargad',       name_en: 'Hargad Fort',        alternate_names: [], type: 'hill',    district: 'Ahmednagar',      state: 'Maharashtra', altitude_m: 950,  difficulty: 'moderate', family_friendly: false, vehicle_access: false, best_season: 'Oct – Feb', tagline: 'A Ahmednagar Sahyadri fort in the Akole area, near the Kalsubai-Harishchandragad range.', coordinates: { lat: 18.5200, lng: 73.8500 }, path: "forts/hargad/index.html", published: true }
+  /* ── Ahilyanagar / Northern Districts (additional) ── */
+  ,{ id: 'bhairavgad-moroshi', name_en: 'Bhairavgad (Moroshi)', alternate_names: [], type: 'hill', district: 'Ahilyanagar', state: 'Maharashtra', altitude_m: 1050, difficulty: 'hard', family_friendly: false, vehicle_access: false, best_season: 'Oct – Feb', tagline: 'One of three Bhairavgads in Maharashtra — this one in Ahilyanagar above the Moroshi valley.', coordinates: { lat: 18.5200, lng: 73.8500 }, path: "forts/bhairavgad-moroshi/index.html", published: true }
+  ,{ id: 'hargad',       name_en: 'Hargad Fort',        alternate_names: [], type: 'hill',    district: 'Ahilyanagar',      state: 'Maharashtra', altitude_m: 950,  difficulty: 'moderate', family_friendly: false, vehicle_access: false, best_season: 'Oct – Feb', tagline: 'A Ahilyanagar Sahyadri fort in the Akole area, near the Kalsubai-Harishchandragad range.', coordinates: { lat: 18.5200, lng: 73.8500 }, path: "forts/hargad/index.html", published: true }
 
   /* ── Vidarbha (additional) ── */
   ,{ id: 'nagardhan',    name_en: 'Nagardhan Fort',     alternate_names: [], type: 'hill',    district: 'Nagpur',          state: 'Maharashtra', altitude_m: 310,  difficulty: 'easy',     family_friendly: true,  vehicle_access: true,  best_season: 'Oct – Mar', tagline: 'An ancient Vidarbha fort near Nagpur — the ancestral stronghold of the Bhonsle dynasty before they moved south.', coordinates: { lat: 21.18, lng: 79.01 }, path: "forts/nagardhan/index.html", published: true }

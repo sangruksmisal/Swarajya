@@ -28,7 +28,7 @@ window.FORT_DATA = {
   },
   timeline: [
     { year: '14th–15th century', event_en: 'Galna Fort established by the Khandesh Faruqi Sultanate as a frontier stronghold at the northern edge of the Sahyadri.' },
-    { year: '16th century', event_en: 'Passes to the Nizam Shahi Sultanate of Ahmednagar during the Deccan sultanate conflicts.' },
+    { year: '16th century', event_en: 'Passes to the Nizam Shahi Sultanate of Ahilyanagar during the Deccan sultanate conflicts.' },
     { year: '1636', event_en: 'Mughal empire controls Galna as part of its consolidation of the Deccan following the Mughal-Adilshahi agreement.' },
     { year: '1671', event_en: 'Chhatrapati Shivaji Maharaj captures Galna as part of his northern Sahyadri campaign — the same campaign that secured Salher.' },
     { year: '1672', event_en: 'The region around Galna is part of the strategic context for the Battle of Salher — the great Maratha-Mughal open battle fought nearby.' },

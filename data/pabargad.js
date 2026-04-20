@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 1100,
   "altitude_ft": 3609,
   "height_above_valley_m": 600,
-  "district": "Ahmednagar",
+  "district": "Ahilyanagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.4500, "lng": 74.2500 },
   "distance_from_pune_km": 130,
@@ -29,7 +29,7 @@ window.FORT_DATA = {
 
 
   "strategic_summary": {
-    "en": "Pabargad Fort is a hill fort in the Sahyadri at approximately 1,100 metres, in the Sangamner-Akole region of Ahmednagar district. The fort stands on a high ridge in the northern Sahyadri, commanding views across the Ahmednagar plateau to the east and toward the Konkan and the Kalsubai-Harishchandragad massif to the west. It forms part of the arc of hill forts that the Marathas maintained across the Sahyadri between Nashik and Ahmednagar, providing a chain of observation and garrison points along the ridgelines. The Sangamner area — through which the Pravara river flows south toward Ahmednagar — was an important agricultural and administrative region, and Pabargad was one of the forts positioned to control movement through this corridor. The fort is less visited than its better-known neighbours in the Kalsubai range, making it a quieter destination for trekkers seeking the Sahyadri ridgeline experience away from crowds."
+    "en": "Pabargad Fort is a hill fort in the Sahyadri at approximately 1,100 metres, in the Sangamner-Akole region of Ahilyanagar district. The fort stands on a high ridge in the northern Sahyadri, commanding views across the Ahilyanagar plateau to the east and toward the Konkan and the Kalsubai-Harishchandragad massif to the west. It forms part of the arc of hill forts that the Marathas maintained across the Sahyadri between Nashik and Ahilyanagar, providing a chain of observation and garrison points along the ridgelines. The Sangamner area — through which the Pravara river flows south toward Ahilyanagar — was an important agricultural and administrative region, and Pabargad was one of the forts positioned to control movement through this corridor. The fort is less visited than its better-known neighbours in the Kalsubai range, making it a quieter destination for trekkers seeking the Sahyadri ridgeline experience away from crowds."
   },
 
   "visitor_info": {
@@ -59,7 +59,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Sangamner Police Station (Ahmednagar)",
+        "label": "Sangamner Police Station (Ahilyanagar)",
         "number": "02425-223033",
         "note": "VERIFY before publishing"
       },
@@ -85,7 +85,7 @@ window.FORT_DATA = {
     "best_season": "October to February",
     "landmarks": [
       "Fort gateway (partial ruins)",
-      "Summit ridge panorama (Ahmednagar plateau and Sahyadri range)",
+      "Summit ridge panorama (Ahilyanagar plateau and Sahyadri range)",
       "Views toward Kalsubai-Harishchandragad massif",
       "Pravara river valley viewpoint"
     ]
@@ -120,7 +120,7 @@ window.FORT_DATA = {
   "timeline": [
     {
       "year": "Medieval period",
-      "event_en": "Pabargad Fort established on the Sahyadri ridge in the Sangamner area, guarding the approaches between the Ahmednagar plateau and the Konkan."
+      "event_en": "Pabargad Fort established on the Sahyadri ridge in the Sangamner area, guarding the approaches between the Ahilyanagar plateau and the Konkan."
     },
     {
       "year": "Maratha period",
@@ -134,6 +134,6 @@ window.FORT_DATA = {
 
   "heroic_tale": {
     "title_en": "The Ridge Fort — Pabargad and the Northern Sahyadri Arc",
-    "body_en": "Not every fort in the Sahyadri can be explained by a single battle or a famous name.\n\nSome forts exist to fill a gap in the ridgeline.\n\nThe northern Sahyadri — the arc of peaks between Nashik and Ahmednagar — is not a single continuous wall. It is a series of ridges, plateaus, and passes, separated by river valleys that cut through the mountains from the Konkan into the Deccan interior. Each of these passes was a vulnerability. Each had to be watched.\n\nPabargad was a watcher.\n\nFrom its ridge above the Pravara river valley, the fort could see the approaches from the plateau to the east and the mountain passes from the Konkan to the west. Any force, any caravan, any movement of consequence through this section of the Sahyadri would be visible from the fort's summit on a clear day.\n\nThe garrison here was not large. It did not need to be. Its job was not to stop an army but to see one — and to send word to the forts and towns behind it.\n\nIn the Maratha system, information moved at the speed of fire. A signal fire on Pabargad could be seen from the next fort in the chain within minutes. The army that thought it was moving unseen through the Sahyadri was, in fact, being watched from every ridge.\n\nThe fort is quiet now. The ridgeline views are still there: the Ahmednagar plateau spreading east, the Kalsubai heights to the west, the Pravara valley below.\n\nThe gap in the ridgeline that Pabargad once watched is still the same gap. The watchers are gone. But the view remains."
+    "body_en": "Not every fort in the Sahyadri can be explained by a single battle or a famous name.\n\nSome forts exist to fill a gap in the ridgeline.\n\nThe northern Sahyadri — the arc of peaks between Nashik and Ahilyanagar — is not a single continuous wall. It is a series of ridges, plateaus, and passes, separated by river valleys that cut through the mountains from the Konkan into the Deccan interior. Each of these passes was a vulnerability. Each had to be watched.\n\nPabargad was a watcher.\n\nFrom its ridge above the Pravara river valley, the fort could see the approaches from the plateau to the east and the mountain passes from the Konkan to the west. Any force, any caravan, any movement of consequence through this section of the Sahyadri would be visible from the fort's summit on a clear day.\n\nThe garrison here was not large. It did not need to be. Its job was not to stop an army but to see one — and to send word to the forts and towns behind it.\n\nIn the Maratha system, information moved at the speed of fire. A signal fire on Pabargad could be seen from the next fort in the chain within minutes. The army that thought it was moving unseen through the Sahyadri was, in fact, being watched from every ridge.\n\nThe fort is quiet now. The ridgeline views are still there: the Ahilyanagar plateau spreading east, the Kalsubai heights to the west, the Pravara valley below.\n\nThe gap in the ridgeline that Pabargad once watched is still the same gap. The watchers are gone. But the view remains."
   }
 };

@@ -161,7 +161,7 @@ window.PLACES = [
     alternate_names: ['Roof of Maharashtra'],
     type: 'peak',
     category: 'Sacred Summit',
-    district: 'Ahmednagar (Akole)',
+    district: 'Ahilyanagar (Akole)',
     state: 'Maharashtra',
     coordinates: { lat: 19.5956, lng: 73.7134 },
     altitude_m: 1646,

@@ -28,7 +28,7 @@ window.FORT_DATA = {
   },
   timeline: [
     { year: 'Ancient', event_en: 'Jivdhan fortified above the Naneghat pass from ancient times. Used by the Satavahana dynasty that established the toll-collection system at Naneghat below.' },
-    { year: '14th–16th century', event_en: 'Nizam Shahi Sultanate of Ahmednagar expands Jivdhan as a major stronghold in their northern territory.' },
+    { year: '14th–16th century', event_en: 'Nizam Shahi Sultanate of Ahilyanagar expands Jivdhan as a major stronghold in their northern territory.' },
     { year: '1657', event_en: 'Chhatrapati Shivaji Maharaj captures Jivdhan, completing Maratha control of the Naneghat corridor and the Junnar region.' },
     { year: '1660s–1680s', event_en: 'Jivdhan used as part of the Maratha network controlling the Junnar-Konkan trade route during campaigns against Mughal forces.' },
     { year: '1818', event_en: 'British forces capture Jivdhan during the Third Anglo-Maratha War.' }

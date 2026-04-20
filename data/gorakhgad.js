@@ -122,7 +122,7 @@ window.FORT_DATA = {
   "timeline": [
     {
       "year": "Pre-1600s",
-      "event_en": "Gorakhgad serves as a watchpost controlling the Deccan–Konkan boundary in the northern Thane region, held by the Bahmani Sultanate and subsequently by the Nizam Shahis of Ahmednagar as part of their northern Konkan defensive network."
+      "event_en": "Gorakhgad serves as a watchpost controlling the Deccan–Konkan boundary in the northern Thane region, held by the Bahmani Sultanate and subsequently by the Nizam Shahis of Ahilyanagar as part of their northern Konkan defensive network."
     },
     {
       "year": "c.1658–1660s",

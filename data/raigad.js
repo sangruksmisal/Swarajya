@@ -161,7 +161,7 @@ window.FORT_DATA = {
     },
     {
       "year": "1458",
-      "event_en": "Fort comes under the Bahamani Sultanate. Later passes to the Nizam Shahi of Ahmednagar."
+      "event_en": "Fort comes under the Bahamani Sultanate. Later passes to the Nizam Shahi of Ahilyanagar."
     },
     {
       "year": "1636",

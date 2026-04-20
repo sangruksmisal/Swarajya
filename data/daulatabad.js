@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 600,
   "altitude_ft": 1969,
   "height_above_valley_m": 183,
-  "district": "Sambhajinagar (Aurangabad)",
+  "district": "Sambhajinagar (Chhatrapati Sambhajinagar)",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.9441, "lng": 75.2175 },
   "distance_from_pune_km": 230,
@@ -24,11 +24,11 @@ window.FORT_DATA = {
   "region": "Marathwada",
   "preservation_status": "well-maintained",
   "water_on_summit": true,
-  "nearest_railway": "Sambhajinagar (Aurangabad) Station (15 km)",
+  "nearest_railway": "Sambhajinagar (Chhatrapati Sambhajinagar) Station (15 km)",
   "nearby_forts": ["killarrak", "antur"],
 
   "strategic_summary": {
-    "en": "Daulatabad Fort — originally known as Deogiri, the City of the Gods — rises on a volcanic basalt inselberg 183 metres above the Deccan plateau, approximately 15 kilometres from Sambhajinagar. It is one of the most formidable hill forts in Indian history, distinguished by the unique defensive features of its natural volcanic mesa: a rock-cut moat that completely encircles the central rock, a dark spiral tunnel approach through which attackers had to pass in single file under the threat of fire and smoke, and a vertical basalt cliff on all sides. The fort was the capital of the Yadava dynasty from the 9th to the 14th century, and its fall to Alauddin Khalji's general in 1308 opened the entire Deccan to Delhi's ambitions. Muhammad bin Tughluq's attempt to move the entire capital of Delhi to Daulatabad in 1327 — forcing his population to march 1,500 kilometres south — is one of history's most extraordinary administrative decisions. The Bahmani, Bijapur, Ahmednagar Sultanate, Mughal, and Maratha empires all held the fort at different points. It passed through more ruling hands than perhaps any other fort in the Deccan. Yet it was never taken by direct assault. In 800 years of warfare, no army ever stormed the volcanic rock of Daulatabad."
+    "en": "Daulatabad Fort — originally known as Deogiri, the City of the Gods — rises on a volcanic basalt inselberg 183 metres above the Deccan plateau, approximately 15 kilometres from Sambhajinagar. It is one of the most formidable hill forts in Indian history, distinguished by the unique defensive features of its natural volcanic mesa: a rock-cut moat that completely encircles the central rock, a dark spiral tunnel approach through which attackers had to pass in single file under the threat of fire and smoke, and a vertical basalt cliff on all sides. The fort was the capital of the Yadava dynasty from the 9th to the 14th century, and its fall to Alauddin Khalji's general in 1308 opened the entire Deccan to Delhi's ambitions. Muhammad bin Tughluq's attempt to move the entire capital of Delhi to Daulatabad in 1327 — forcing his population to march 1,500 kilometres south — is one of history's most extraordinary administrative decisions. The Bahmani, Bijapur, Ahilyanagar Sultanate, Mughal, and Maratha empires all held the fort at different points. It passed through more ruling hands than perhaps any other fort in the Deccan. Yet it was never taken by direct assault. In 800 years of warfare, no army ever stormed the volcanic rock of Daulatabad."
   },
 
   "visitor_info": {
@@ -52,14 +52,14 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Sambhajinagar (Aurangabad) Police",
+        "label": "Sambhajinagar (Chhatrapati Sambhajinagar) Police",
         "number": "0240-2331111",
         "note": "VERIFY before publishing"
       },
       {
-        "label": "Archaeological Survey of India — Aurangabad Circle",
+        "label": "Archaeological Survey of India — Chhatrapati Sambhajinagar Circle",
         "number": "0240-2331492",
-        "note": "ASI office for the Aurangabad area. VERIFY before publishing."
+        "note": "ASI office for the Chhatrapati Sambhajinagar area. VERIFY before publishing."
       },
       {
         "label": "National Emergency Helpline",
@@ -68,7 +68,7 @@ window.FORT_DATA = {
       }
     ],
     "nearest_medical": {
-      "village": "Sambhajinagar (Aurangabad city)",
+      "village": "Sambhajinagar (Chhatrapati Sambhajinagar city)",
       "facility": "Government Medical College Hospital, Sambhajinagar",
       "distance_km": 15,
       "phone": null,
@@ -173,7 +173,7 @@ window.FORT_DATA = {
     },
     {
       "year": "1499",
-      "event_en": "Ahmednagar Sultanate (Nizam Shahi) gains control of Daulatabad as the Bahmani kingdom fragments into the five Deccan Sultanates."
+      "event_en": "Ahilyanagar Sultanate (Nizam Shahi) gains control of Daulatabad as the Bahmani kingdom fragments into the five Deccan Sultanates."
     },
     {
       "year": "1633",

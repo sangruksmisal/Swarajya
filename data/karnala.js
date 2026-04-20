@@ -134,7 +134,7 @@ window.FORT_DATA = {
     },
     {
       "year": "1540",
-      "event_en": "Karnala comes under the control of the Nizam Shahi Sultanate of Ahmednagar, who use it as a key pass-guard on the Pune–Mumbai route."
+      "event_en": "Karnala comes under the control of the Nizam Shahi Sultanate of Ahilyanagar, who use it as a key pass-guard on the Pune–Mumbai route."
     },
     {
       "year": "1618",

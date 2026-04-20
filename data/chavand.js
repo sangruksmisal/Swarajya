@@ -15,7 +15,7 @@ window.FORT_DATA = {
   "direction_from_pune": "north",
   "mountain_range": "Sahyadri (Western Ghats), Junnar region",
   "unesco": false,
-  "famous_for": "The last capital of the Nizam Shahi Sultanate of Ahmednagar, where the young Nizam Shahi sultans were sheltered by Malik Ambar; later an important Maratha frontier post in the northern Sahyadri",
+  "famous_for": "The last capital of the Nizam Shahi Sultanate of Ahilyanagar, where the young Nizam Shahi sultans were sheltered by Malik Ambar; later an important Maratha frontier post in the northern Sahyadri",
   "built_by": "Maratha period",
   "built_year_approx": "17th-18th century",
   "maratha_period_role": "general",

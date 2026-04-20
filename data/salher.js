@@ -136,7 +136,7 @@ window.FORT_DATA = {
     },
     {
       "year": "1636",
-      "event_en": "Salher is under Mughal control as part of the northern Sahyadri region administered from Aurangabad."
+      "event_en": "Salher is under Mughal control as part of the northern Sahyadri region administered from Chhatrapati Sambhajinagar."
     },
     {
       "year": "1671",

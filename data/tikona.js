@@ -67,7 +67,7 @@ window.FORT_DATA = {
   "temples": [{ "name": "Trimbakeshwar Shiva Temple", "deity": "Lord Shiva (Trimbakeshwar)", "description": "A Shiva temple at the summit — the primary reason many visitors make the climb. Named after Trimbakeshwar, one of the twelve Jyotirlinga shrines." }],
   "memorials": [{ "name": "Pawna Lake Viewpoint", "description": "The summit of Tikona offers one of the most photographed views in the Sahyadri — the blue expanse of Pawna lake stretching below, with Tung fort visible across the water and Lohgad-Visapur on the ridge beyond." }],
   "timeline": [
-    { "year": "Pre-17th century", "event_en": "Tikona is part of the chain of forts guarding the Maval region, held by the Nizam Shahi of Ahmednagar." },
+    { "year": "Pre-17th century", "event_en": "Tikona is part of the chain of forts guarding the Maval region, held by the Nizam Shahi of Ahilyanagar." },
     { "year": "1657", "event_en": "Chhatrapati Shivaji Maharaj captures Tikona as part of his consolidation of the Maval-Lonavala fort cluster." },
     { "year": "1665", "event_en": "Treaty of Purandar: Tikona is among the forts surrendered to the Mughals." },
     { "year": "1670", "event_en": "Chhatrapati Shivaji Maharaj recaptures Tikona." },

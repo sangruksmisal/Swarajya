@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 1422,
   "altitude_ft": 4665,
   "height_above_valley_m": 800,
-  "district": "Nashik / Ahmednagar border (Akole taluka, Ahmednagar)",
+  "district": "Nashik / Ahilyanagar border (Akole taluka, Ahilyanagar)",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.3883, "lng": 73.7736 },
   "distance_from_pune_km": 130,
@@ -29,7 +29,7 @@ window.FORT_DATA = {
 
 
   "strategic_summary": {
-    "en": "Harishchandragad is one of the most celebrated forts and trekking destinations in the Sahyadri, straddling the Nashik-Ahmednagar border in the Akole taluka. The fort is famous for the Konkan Kada — a near-vertical 1,000-metre overhanging cliff face that plunges toward the Konkan below — one of the most dramatic natural features in the Western Ghats. The fort also contains ancient cave temples with 6th-century stone carvings, and a cave-temple to Harishchandra (a manifestation of Vishnu). The combination of extreme terrain, ancient temples, and Sahyadri grandeur makes this one of the most significant forts in Maharashtra."
+    "en": "Harishchandragad is one of the most celebrated forts and trekking destinations in the Sahyadri, straddling the Nashik-Ahilyanagar border in the Akole taluka. The fort is famous for the Konkan Kada — a near-vertical 1,000-metre overhanging cliff face that plunges toward the Konkan below — one of the most dramatic natural features in the Western Ghats. The fort also contains ancient cave temples with 6th-century stone carvings, and a cave-temple to Harishchandra (a manifestation of Vishnu). The combination of extreme terrain, ancient temples, and Sahyadri grandeur makes this one of the most significant forts in Maharashtra."
   },
 
   "visitor_info": {
@@ -59,7 +59,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Akole Police Station (Ahmednagar)",
+        "label": "Akole Police Station (Ahilyanagar)",
         "number": "02426-242033",
         "note": "VERIFY before publishing."
       },
@@ -137,7 +137,7 @@ window.FORT_DATA = {
     },
     {
       "year": "Maratha period",
-      "event_en": "Harishchandragad Fort guards the Malshej Ghat approaches and the Nashik-Ahmednagar border region."
+      "event_en": "Harishchandragad Fort guards the Malshej Ghat approaches and the Nashik-Ahilyanagar border region."
     },
     {
       "year": "1818",

@@ -18,7 +18,7 @@ window.FORT_DATA = {
   "mountain_range": "Sahyadri (Western Ghats)",
   "unesco": true,
   "famous_for": "Birthplace of Chhatrapati Shivaji Maharaj (February 19, 1630) — where Rajmata Jijabai prayed at the Shivai Devi temple for a brave son who would build Swarajya and named him after the goddess",
-  "built_by": "Yadava dynasty; Ahmednagar Sultanate; Maratha period",
+  "built_by": "Yadava dynasty; Ahilyanagar Sultanate; Maratha period",
   "built_year_approx": "17th-18th century",
   "maratha_period_role": "birthplace",
   "region": "Pune Sahyadri",
@@ -161,11 +161,11 @@ window.FORT_DATA = {
     },
     {
       "year": "1493",
-      "event_en": "Shivneri comes under the Nizam Shahi of Ahmednagar after the Bahamani Sultanate fragments. The Nizam Shahis develop the fort extensively."
+      "event_en": "Shivneri comes under the Nizam Shahi of Ahilyanagar after the Bahamani Sultanate fragments. The Nizam Shahis develop the fort extensively."
     },
     {
       "year": "1595",
-      "event_en": "Nearby Ahmednagar is besieged by Mughal forces. The warrior queen Chand Bibi defends the Ahmednagar Sultanate. Shivneri is in the contested border zone between Mughal and Nizam Shahi territory."
+      "event_en": "Nearby Ahilyanagar is besieged by Mughal forces. The warrior queen Chand Bibi defends the Ahilyanagar Sultanate. Shivneri is in the contested border zone between Mughal and Nizam Shahi territory."
     },
     {
       "year": "c.1629",
