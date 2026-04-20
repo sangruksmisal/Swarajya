@@ -103,6 +103,8 @@ p  { margin-bottom: 1rem; }
   text-decoration: none;
 }
 .header-nav a:hover { color: var(--gold); text-decoration: none; }
+.nav-lang-marathi { opacity: 0.45; cursor: default; pointer-events: none; font-family: inherit; }
+.nav-lang-marathi:hover { color: var(--parchment) !important; }
 
 /* ── Badges ─────────────────────────────────────────────────── */
 .badge {

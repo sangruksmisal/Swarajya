@@ -287,15 +287,12 @@
   function updateStats() {
     var total     = (window.FORTS || []).length;
     var published = (window.FORTS || []).filter(function (f) { return f.published !== false; }).length;
-    var coming    = total - published;
     var places    = (window.PLACES || []).length;
 
     var elPublished = document.getElementById('stat-published');
-    var elComing    = document.getElementById('stat-coming');
     var elPlaces    = document.getElementById('stat-places');
 
     if (elPublished) elPublished.textContent = published;
-    if (elComing)    elComing.textContent    = coming + '+';
     if (elPlaces)    elPlaces.textContent    = places;
   }
 
