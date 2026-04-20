@@ -10,7 +10,7 @@ window.FORT_DATA = {
   "altitude_m": 600,
   "altitude_ft": 1969,
   "height_above_valley_m": 183,
-  "district": "Sambhajinagar (Chhatrapati Sambhajinagar)",
+  "district": "Chhatrapati Sambhajinagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.9441, "lng": 75.2175 },
   "distance_from_pune_km": 230,
@@ -24,7 +24,7 @@ window.FORT_DATA = {
   "region": "Marathwada",
   "preservation_status": "well-maintained",
   "water_on_summit": true,
-  "nearest_railway": "Sambhajinagar (Chhatrapati Sambhajinagar) Station (15 km)",
+  "nearest_railway": "Chhatrapati Sambhajinagar Station (15 km)",
   "nearby_forts": ["killarrak", "antur"],
 
   "strategic_summary": {
@@ -52,7 +52,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Sambhajinagar (Chhatrapati Sambhajinagar) Police",
+        "label": "Chhatrapati Sambhajinagar Police",
         "number": "0240-2331111",
         "note": "VERIFY before publishing"
       },
@@ -68,7 +68,7 @@ window.FORT_DATA = {
       }
     ],
     "nearest_medical": {
-      "village": "Sambhajinagar (Chhatrapati Sambhajinagar city)",
+      "village": "Chhatrapati Sambhajinagar city",
       "facility": "Government Medical College Hospital, Sambhajinagar",
       "distance_km": 15,
       "phone": null,

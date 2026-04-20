@@ -10,25 +10,25 @@ window.FORT_DATA = {
   "altitude_m": 525,
   "altitude_ft": 1722,
   "height_above_valley_m": 50,
-  "district": "Sambhajinagar (Chhatrapati Sambhajinagar)",
+  "district": "Chhatrapati Sambhajinagar",
   "state": "Maharashtra",
   "coordinates": { "lat": 19.8762, "lng": 75.3427 },
   "distance_from_pune_km": 235,
   "direction_from_pune": "northeast",
-  "mountain_range": "Deccan plateau (hillock fort within Chhatrapati Sambhajinagar/Sambhajinagar city)",
+  "mountain_range": "Deccan plateau (hillock fort within Chhatrapati Sambhajinagar city)",
   "unesco": false,
-  "famous_for": "Malik Ambar's city — an Ethiopian slave-general built the fort that became the capital of Sambhajinagar (Chhatrapati Sambhajinagar), defying the Mughals for two decades",
+  "famous_for": "Malik Ambar's city — an Ethiopian slave-general built the fort that became the capital of Chhatrapati Sambhajinagar, defying the Mughals for two decades",
   "built_by": "Malik Ambar (Nizam Shahi, early 17th century)",
   "built_year_approx": "c. 1600–1626",
   "maratha_period_role": "administrative",
   "region": "Marathwada",
   "preservation_status": "moderate",
   "water_on_summit": false,
-  "nearest_railway": "Sambhajinagar (Chhatrapati Sambhajinagar) Station (5 km)",
+  "nearest_railway": "Chhatrapati Sambhajinagar Station (5 km)",
   "nearby_forts": ["daulatabad", "antur"],
 
   "strategic_summary": {
-    "en": "Killa Arrak — the Fort of Arrak, also known simply as Chhatrapati Sambhajinagar Fort — stands on a rocky hillock within Sambhajinagar (Chhatrapati Sambhajinagar) city. It was built and developed by Malik Ambar, the extraordinary Ethiopian slave-general who became the de facto ruler of the Nizam Shahi Sultanate of Ahilyanagar in the early 17th century, as a fortified capital after the original Ahilyanagar Fort came under threat. Malik Ambar used his military genius and the difficult terrain of the Deccan to repeatedly outmanoeuvre the Mughals for two decades, denying them full control of the Ahilyanagar Sultanate. The city of Chhatrapati Sambhajinagar/Sambhajinagar grew around Killa Arrak as Malik Ambar's planned capital — he laid out the city's water supply system, roads, and markets. After the Mughals eventually prevailed and the Nizam Shahi Sultanate was extinguished, Aurangzeb used the city as his Deccan headquarters during his long campaigns in the south, and his campaign palace (Bibi ka Maqbara, built 1660) stands nearby. The fort today is within the urban fabric of Sambhajinagar and is in partial ruins, but it remains an important heritage marker of Malik Ambar's remarkable life and the final years of the Ahilyanagar Sultanate."
+    "en": "Killa Arrak — the Fort of Arrak, also known simply as Chhatrapati Sambhajinagar Fort — stands on a rocky hillock within Chhatrapati Sambhajinagar city. It was built and developed by Malik Ambar, the extraordinary Ethiopian slave-general who became the de facto ruler of the Nizam Shahi Sultanate of Ahilyanagar in the early 17th century, as a fortified capital after the original Ahilyanagar Fort came under threat. Malik Ambar used his military genius and the difficult terrain of the Deccan to repeatedly outmanoeuvre the Mughals for two decades, denying them full control of the Ahilyanagar Sultanate. The city of Chhatrapati Sambhajinagar/Sambhajinagar grew around Killa Arrak as Malik Ambar's planned capital — he laid out the city's water supply system, roads, and markets. After the Mughals eventually prevailed and the Nizam Shahi Sultanate was extinguished, Aurangzeb used the city as his Deccan headquarters during his long campaigns in the south, and his campaign palace (Bibi ka Maqbara, built 1660) stands nearby. The fort today is within the urban fabric of Sambhajinagar and is in partial ruins, but it remains an important heritage marker of Malik Ambar's remarkable life and the final years of the Ahilyanagar Sultanate."
   },
 
   "visitor_info": {
@@ -52,7 +52,7 @@ window.FORT_DATA = {
   "emergency": {
     "contacts": [
       {
-        "label": "Sambhajinagar (Chhatrapati Sambhajinagar) Police",
+        "label": "Chhatrapati Sambhajinagar Police",
         "number": "0240-2331111",
         "note": "VERIFY before publishing"
       },
@@ -63,7 +63,7 @@ window.FORT_DATA = {
       }
     ],
     "nearest_medical": {
-      "village": "Sambhajinagar (Chhatrapati Sambhajinagar city)",
+      "village": "Chhatrapati Sambhajinagar city",
       "facility": "Government Medical College Hospital, Sambhajinagar",
       "distance_km": 3,
       "phone": null,
@@ -73,7 +73,7 @@ window.FORT_DATA = {
 
   "trek": {
     "grade": "Easy",
-    "base_village": "Sambhajinagar (Chhatrapati Sambhajinagar) city",
+    "base_village": "Chhatrapati Sambhajinagar city",
     "duration_hours": "30–45 minutes to explore",
     "best_season": "October to March",
     "landmarks": [
