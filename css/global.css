@@ -1,0 +1,1136 @@
+/* ============================================================
+   SWARAJYA — Global Styles
+   Maratha color palette:
+   Saffron #FF6B00 | Maroon #8B0000 | Gold #FFD700
+   Dark Stone #2C1810 | Parchment #F5E6D3
+   ============================================================ */
+
+:root {
+  --saffron:      #FF6B00;
+  --saffron-light:#FF8C3A;
+  --maroon:       #8B0000;
+  --maroon-light: #A50000;
+  --gold:         #FFD700;
+  --gold-muted:   #C9A800;
+  --dark-stone:   #2C1810;
+  --dark-stone-2: #1a0e08;
+  --parchment:    #F5E6D3;
+  --parchment-dark:#E8D5BC;
+  --parchment-mid:#EDD8BE;
+  --text-dark:    #1a0a00;
+  --text-medium:  #4a2c0a;
+  --text-light:   #7a5c3a;
+  --white:        #ffffff;
+
+  --font-heading: 'Cinzel', 'Times New Roman', serif;
+  --font-body:    'Lato', 'Segoe UI', sans-serif;
+
+  --max-width: 1200px;
+  --section-pad: 4rem 1.5rem;
+  --radius: 6px;
+  --shadow: 0 2px 12px rgba(44,24,16,0.12);
+  --shadow-strong: 0 4px 24px rgba(44,24,16,0.22);
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--parchment);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--maroon); text-decoration: none; }
+a:hover { color: var(--saffron); text-decoration: underline; }
+
+/* ── Typography ─────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--dark-stone);
+  line-height: 1.25;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+h3 { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
+p  { margin-bottom: 1rem; }
+
+/* ── Site Header ────────────────────────────────────────────── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark-stone-2);
+  border-bottom: 2px solid var(--saffron);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  gap: 1rem;
+}
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-decoration: none;
+}
+.brand-marathi {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+.brand-english {
+  font-size: 0.7rem;
+  color: var(--parchment);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header-nav a {
+  color: var(--parchment);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.header-nav a:hover { color: var(--gold); text-decoration: none; }
+
+/* ── Badges ─────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.badge-green  { background: #1a6e2e; color: #fff; }
+.badge-yellow { background: #a07800; color: #fff; }
+.badge-orange { background: var(--saffron); color: #fff; }
+.badge-red    { background: #8B0000; color: #fff; }
+.badge-blue   { background: #1a4a8b; color: #fff; }
+.badge-gray   { background: #5a5a5a; color: #fff; }
+.badge-stone  { background: var(--dark-stone); color: var(--gold); }
+
+/* ── Ornamental Divider ──────────────────────────────────────── */
+.ornament {
+  text-align: center;
+  margin: 2.5rem 0;
+  color: var(--gold-muted);
+  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  opacity: 0.7;
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: var(--gold-muted);
+  vertical-align: middle;
+  margin: 0 0.8rem;
+}
+
+/* ── Section Title ───────────────────────────────────────────── */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: var(--maroon);
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--saffron);
+  display: inline-block;
+}
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+/* ── Quick Fact Table ────────────────────────────────────────── */
+.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.92rem;
+}
+.fact-table td {
+  padding: 0.45rem 0.8rem;
+  border-bottom: 1px solid var(--parchment-dark);
+  vertical-align: top;
+}
+.fact-table td:first-child {
+  font-weight: 700;
+  color: var(--maroon);
+  width: 38%;
+  white-space: nowrap;
+}
+.fact-table tr:last-child td { border-bottom: none; }
+
+/* ── Card ────────────────────────────────────────────────────── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--parchment-dark);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow);
+}
+
+/* ── Site Footer ─────────────────────────────────────────────── */
+.site-footer {
+  background: var(--dark-stone-2);
+  color: var(--parchment);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 2px solid var(--maroon);
+  font-size: 0.85rem;
+}
+.site-footer a { color: var(--gold); }
+.footer-note {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ── Utility ─────────────────────────────────────────────────── */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+.text-center { text-align: center; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+
+/* ── Focus Styles (accessibility) ───────────────────────────── */
+.filter-btn:focus-visible,
+.place-filter-btn:focus-visible,
+#district-filter:focus-visible,
+#sort-select:focus-visible,
+#fort-search:focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 2px;
+}
+.fort-card:focus-visible,
+.place-card:focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+.header-nav a:focus-visible,
+.site-brand:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  #fort-map { height: 340px; }
+  .hero-stat-row { gap: 1.5rem; }
+  .shivaji-facts-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
+@media (max-width: 600px) {
+  :root { --section-pad: 2.5rem 1rem; }
+  .site-header { padding: 0.6rem 1rem; }
+  .header-nav a { font-size: 0.8rem; }
+  #fort-map { height: 260px; }
+  .hero-stat-row { gap: 1rem; }
+  .fort-grid-section { padding: 2rem 1rem 3rem; }
+  .places-section { padding: 2rem 1rem 3rem; }
+}
+
+/* ============================================================
+   HOME PAGE STYLES
+   ============================================================ */
+
+/* ── Home Hero ───────────────────────────────────────────────── */
+.home-hero {
+  background: linear-gradient(160deg, var(--dark-stone-2) 0%, var(--dark-stone) 55%, #3a1a08 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.home-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--maroon), var(--saffron), var(--gold), var(--saffron), var(--maroon));
+}
+.hero-marathi {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.1rem;
+  text-shadow: 0 2px 20px rgba(255,215,0,0.3);
+}
+.hero-english {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  color: var(--saffron);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.hero-tagline {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: var(--parchment);
+  opacity: 0.8;
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.7;
+}
+.hero-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 1.5rem auto;
+}
+.hero-stat-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.hero-stat { text-align: center; }
+.hero-stat-number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  opacity: 0.65;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+/* ── Map Section ──────────────────────────────────────────────── */
+.map-section {
+  background: var(--dark-stone);
+  padding: 2.5rem 1.5rem;
+}
+.map-section-header {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.map-section-header h2 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--gold);
+}
+.map-section-header p {
+  color: var(--parchment);
+  opacity: 0.6;
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0;
+}
+#fort-map {
+  height: 420px;
+  border-radius: var(--radius);
+  border: 2px solid var(--maroon);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: #1a0e08;
+}
+.fort-map-marker .map-pin {
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  transition: transform 0.15s;
+}
+.fort-map-marker .map-pin:hover { transform: scale(1.2); }
+.map-popup { font-family: var(--font-body); font-size: 0.88rem; }
+.map-popup strong { color: var(--dark-stone); }
+.map-popup a { color: var(--maroon); font-weight: 700; }
+
+/* ── Fort Grid Section ────────────────────────────────────────── */
+.fort-grid-section {
+  padding: 3rem 1.5rem 4rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.fort-grid-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.fort-grid-header h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--dark-stone);
+}
+.fort-count {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+/* ── Filter Bar ───────────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+.filter-btn {
+  padding: 0.35rem 1rem;
+  border: 2px solid var(--parchment-dark);
+  background: var(--white);
+  color: var(--text-medium);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.filter-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+.filter-btn.active { background: var(--saffron); border-color: var(--saffron); color: var(--white); }
+
+/* ── Fort Card ────────────────────────────────────────────────── */
+#fort-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.fort-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--parchment-dark);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.fort-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+  text-decoration: none;
+}
+.fort-card-img-wrap {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--dark-stone);
+  overflow: hidden;
+}
+.fort-card-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, #3d2010 100%);
+  color: var(--parchment);
+  gap: 0.4rem;
+}
+.fort-card-img-placeholder span { font-size: 2.5rem; opacity: 0.7; }
+.fort-card-img-placeholder small {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+}
+.fort-card-unesco {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: #1a4a8b;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+.fort-card-body {
+  padding: 1rem 1.2rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fort-card-location {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.fort-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--dark-stone);
+  margin-bottom: 0.15rem;
+}
+.fort-card-aka {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.fort-card-tagline {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 0.8rem;
+}
+.fort-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+.no-results {
+  grid-column: 1/-1;
+  text-align: center;
+  color: var(--text-light);
+  padding: 3rem;
+  font-style: italic;
+}
+
+/* ============================================================
+   SHIVAJI MAHARAJ LEGACY SECTION (Home Page)
+   ============================================================ */
+
+.shivaji-section {
+  background: linear-gradient(180deg, var(--dark-stone-2) 0%, #2a0800 60%, var(--dark-stone) 100%);
+  color: var(--parchment);
+  padding: 5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.shivaji-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.shivaji-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.shivaji-section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.shivaji-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.shivaji-ornament {
+  color: var(--gold);
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  opacity: 0.7;
+}
+
+.shivaji-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.shivaji-dates {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--parchment-dark);
+  letter-spacing: 0.15em;
+  margin: 0 0 0.4rem;
+}
+
+.shivaji-subtitle {
+  font-size: 1rem;
+  color: var(--saffron-light);
+  letter-spacing: 0.05em;
+  margin: 0 0 0.8rem;
+}
+
+.shivaji-intro {
+  max-width: 780px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.shivaji-intro p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--parchment);
+  margin-bottom: 1rem;
+}
+
+.shivaji-intro strong {
+  color: var(--gold);
+}
+
+/* ── Fact cards grid ── */
+.shivaji-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.shivaji-fact-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,215,0,0.2);
+  border-top: 3px solid var(--saffron);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.5rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.shivaji-fact-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,215,0,0.4);
+}
+
+.shivaji-fact-icon {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  opacity: 0.85;
+}
+
+.shivaji-fact-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin: 0 0 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.shivaji-fact-card p {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--parchment-dark);
+  margin: 0;
+}
+
+.shivaji-fact-card em {
+  color: var(--saffron-light);
+  font-style: italic;
+}
+
+/* ── Legacy text blocks ── */
+.shivaji-legacy-block {
+  max-width: 820px;
+  margin: 0 auto 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,215,0,0.15);
+}
+
+.shivaji-legacy-block:last-of-type {
+  border-bottom: none;
+}
+
+.shivaji-legacy-block h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.shivaji-legacy-block p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--parchment);
+  margin-bottom: 1rem;
+}
+
+.shivaji-legacy-block strong {
+  color: var(--gold);
+}
+
+.shivaji-quote {
+  margin: 2rem 0 0;
+  padding: 1.5rem 2rem;
+  background: rgba(255,107,0,0.08);
+  border-left: 4px solid var(--saffron);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--parchment);
+}
+
+.shivaji-quote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--saffron-light);
+  letter-spacing: 0.05em;
+}
+
+/* ── Timeline strip ── */
+.shivaji-timeline-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin-top: 3rem;
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.shivaji-tl-item {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  border-right: 1px solid rgba(255,215,0,0.15);
+  background: rgba(255,255,255,0.03);
+  transition: background 0.2s;
+}
+
+.shivaji-tl-item:last-child {
+  border-right: none;
+}
+
+.shivaji-tl-item:hover {
+  background: rgba(255,215,0,0.07);
+}
+
+.shivaji-tl-year {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.shivaji-tl-event {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--parchment-dark);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .shivaji-timeline-strip {
+    flex-direction: column;
+  }
+  .shivaji-tl-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,215,0,0.15);
+    padding: 1rem 1.5rem;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .shivaji-tl-item:last-child { border-bottom: none; }
+  .shivaji-tl-year { min-width: 45px; }
+}
+
+/* ============================================================
+   SEARCH + SORT + DISTRICT FILTERS
+   ============================================================ */
+
+/* Search row */
+.search-row {
+  margin-bottom: 1rem;
+}
+.fort-search-input {
+  width: 100%;
+  padding: 0.55rem 1.1rem;
+  border: 2px solid var(--parchment-dark);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.fort-search-input:focus {
+  outline: none;
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(255,107,0,0.12);
+}
+.fort-search-input::placeholder { color: var(--text-light); }
+
+/* Sort dropdown (reuses district-filter-wrap style) */
+.sort-filter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sort-filter-wrap label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-medium);
+  white-space: nowrap;
+}
+#sort-select {
+  padding: 0.32rem 2rem 0.32rem 0.75rem;
+  border: 2px solid var(--parchment-dark);
+  background: var(--white);
+  color: var(--text-medium);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234a2c0a'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  transition: border-color 0.2s;
+}
+#sort-select:focus,
+#sort-select:hover { border-color: var(--saffron); outline: none; }
+
+/* ============================================================
+   DISTRICT FILTER DROPDOWN
+   ============================================================ */
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+
+.filter-row .filter-bar {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.district-filter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.district-filter-wrap label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-medium);
+  white-space: nowrap;
+}
+
+#district-filter {
+  padding: 0.32rem 2rem 0.32rem 0.75rem;
+  border: 2px solid var(--parchment-dark);
+  background: var(--white);
+  color: var(--text-medium);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234a2c0a'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  transition: border-color 0.2s;
+}
+
+#district-filter:focus,
+#district-filter:hover {
+  border-color: var(--saffron);
+  outline: none;
+}
+
+/* ============================================================
+   COMING SOON FORT CARDS
+   ============================================================ */
+
+.fort-card--coming-soon {
+  opacity: 0.58;
+  cursor: default;
+  filter: saturate(0.3);
+  pointer-events: none;
+}
+
+.fort-card--coming-soon:hover {
+  transform: none;
+  box-shadow: var(--shadow);
+}
+
+.fort-card-img-placeholder--dim {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%) !important;
+}
+
+.coming-soon-badge {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: #555;
+  color: #ccc;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* ============================================================
+   OTHER PLACES SECTION
+   ============================================================ */
+
+.places-section {
+  padding: 3rem 1.5rem 4.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.places-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.places-section-header h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--dark-stone);
+}
+
+.places-section-intro {
+  font-size: 0.92rem;
+  color: var(--text-light);
+  max-width: 680px;
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+}
+
+.places-section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #3a6b3a, #2d7a6b, transparent);
+  margin: 0 0 1.8rem;
+  border: none;
+  opacity: 0.5;
+}
+
+/* ── Place filter buttons ── */
+.place-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.8rem;
+}
+
+.place-filter-btn {
+  padding: 0.32rem 0.9rem;
+  border: 2px solid #b5d4b5;
+  background: var(--white);
+  color: #3a6b3a;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+
+.place-filter-btn:hover {
+  border-color: #3a6b3a;
+  background: #f0f7f0;
+}
+
+.place-filter-btn.active {
+  background: #3a6b3a;
+  border-color: #3a6b3a;
+  color: var(--white);
+}
+
+/* ── Place card grid ── */
+#place-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.place-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid #d4e8d4;
+  border-left: 4px solid #3a6b3a;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
+  text-decoration: none;
+}
+
+.place-card-icon-wrap {
+  position: relative;
+  aspect-ratio: 16/6;
+  background: linear-gradient(135deg, #1a3a1a 0%, #2d5a3a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place-card-icon {
+  font-size: 2.4rem;
+  opacity: 0.75;
+}
+
+.coming-soon-badge--place {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #555;
+  color: #ccc;
+}
+
+.place-card-body {
+  padding: 1rem 1.2rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-card-category {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3a6b3a;
+  margin-bottom: 0.2rem;
+}
+
+.place-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--dark-stone);
+  margin-bottom: 0.15rem;
+}
+
+.place-card-location {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.place-card-tagline {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
+}
+
+.place-card-connection {
+  font-size: 0.78rem;
+  color: #3a6b3a;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+  padding: 0.5rem 0.7rem;
+  background: #f0f7f0;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.place-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.place-card--coming-soon {
+  opacity: 0.55;
+  cursor: default;
+  filter: saturate(0.35);
+  pointer-events: none;
+  border-left-color: #888;
+}
+
+.place-card--coming-soon:hover {
+  transform: none;
+  box-shadow: var(--shadow);
+}
+
+/* ── Map pin variants ── */
+.map-pin--stub {
+  font-size: 1.2rem;
+  color: #888;
+  line-height: 1;
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-pin--place {
+  font-size: 1.1rem;
+  line-height: 1;
+}

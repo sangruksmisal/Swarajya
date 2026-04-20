@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swarajya — Maratha Forts Heritage</title>
+  <meta name="description" content="Explore the forts of the Maratha Empire — their history, heroic tales, architecture, and visitor information.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <!-- ── Header ────────────────────────────────────────────── -->
+  <header class="site-header">
+    <a href="index.html" class="site-brand">
+      <span class="brand-marathi">&#x938;&#x94D;&#x935;&#x930;&#x93E;&#x91C;&#x94D;&#x92F;</span>
+      <span class="brand-english">Swarajya</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html">Forts</a>
+      <a href="#other-places">Other Places</a>
+    </nav>
+  </header>
+
+  <!-- ── Home Hero ─────────────────────────────────────────── -->
+  <section class="home-hero">
+    <p class="hero-english">Hindavi</p>
+    <h1 class="hero-marathi">&#x938;&#x94D;&#x935;&#x930;&#x93E;&#x91C;&#x94D;&#x92F;</h1>
+    <p class="hero-tagline">Exploring the forts, battles, and heroes of the Maratha Empire</p>
+    <div class="hero-divider"></div>
+    <div class="hero-stat-row">
+      <div class="hero-stat">
+        <span class="hero-stat-number" id="stat-published">222</span>
+        <span class="hero-stat-label">Forts Published</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number" id="stat-coming">89+</span>
+        <span class="hero-stat-label">Coming Soon</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">12</span>
+        <span class="hero-stat-label">UNESCO World Heritage</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number" id="stat-places">15</span>
+        <span class="hero-stat-label">Other Places</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Map ───────────────────────────────────────────────── -->
+  <div class="map-section">
+    <div class="map-section-header">
+      <h2>Fort Locations</h2>
+      <p>Click a marker to view the fort</p>
+    </div>
+    <div id="fort-map"></div>
+  </div>
+
+  <!-- ── Chhatrapati Shivaji Maharaj Legacy Section ──────────────────────── -->
+  <section class="Chhatrapati Shivaji Maharaj-section" id="Chhatrapati Shivaji Maharaj-legacy">
+
+    <div class="Chhatrapati Shivaji Maharaj-section-inner">
+
+      <div class="Chhatrapati Shivaji Maharaj-header">
+        <div class="Chhatrapati Shivaji Maharaj-ornament">&#10022;</div>
+        <h2 class="Chhatrapati Shivaji Maharaj-title">Chhatrapati Shivaji Maharaj</h2>
+        <p class="Chhatrapati Shivaji Maharaj-dates">1630 &ndash; 1680</p>
+        <p class="Chhatrapati Shivaji Maharaj-subtitle">Founder of the Maratha Empire &bull; Builder of Swarajya</p>
+        <div class="Chhatrapati Shivaji Maharaj-ornament">&#10022;</div>
+      </div>
+
+      <div class="Chhatrapati Shivaji Maharaj-intro">
+        <p>
+          In an age when the Mughal Empire stretched across almost all of the Indian subcontinent,
+          when the great Deccan Sultanates were either collapsing or capitulating, and when no Indian
+          ruler had successfully challenged the combined military and administrative weight of Mughal power
+          — a boy was born in a hilltop fort in the Sahyadri mountains.
+        </p>
+        <p>
+          That boy grew up to build something no one had built in the Deccan for generations:
+          a kingdom of, by, and for the people of the land. He called it <strong>Hindavi Swarajya</strong>
+          — self-rule in the language of the people. He was twenty-seven years old when the idea became a reality.
+          He was forty-nine when he died. In those twenty-two years, he changed the course of Indian history.
+        </p>
+      </div>
+
+      <div class="Chhatrapati Shivaji Maharaj-facts-grid">
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9993;</div>
+          <h3>Born at Shivneri</h3>
+          <p>
+            February 19, 1630. His mother Jijabai had climbed to Shivneri fort for safety while his father
+            Shahaji Raje was on campaign. She prayed at the Shivai Devi temple for a brave son.
+            She named him Chhatrapati Shivaji Maharaj — after the goddess who answered her prayer.
+          </p>
+        </div>
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9876;</div>
+          <h3>First Fort at Sixteen</h3>
+          <p>
+            In 1646, at the age of sixteen, Chhatrapati Shivaji Maharaj captured Torna Fort — his first fort.
+            He did not ask permission from his father, the Deccan Sultanates, or the Mughals.
+            He simply took it. Within a decade, he held a string of forts across the Sahyadri mountains.
+          </p>
+        </div>
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9812;</div>
+          <h3>Master of Guerrilla Warfare</h3>
+          <p>
+            Chhatrapati Shivaji Maharaj invented a style of warfare suited to the Sahyadri terrain —
+            fast cavalry raids, night attacks, and fort-to-fort strategy that made the mountains
+            themselves his weapon. Mughal generals with armies ten times the size could not pin him down.
+            He called it <em>ganimi kava</em> — the enemy's own tactics, turned against them.
+          </p>
+        </div>
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9875;</div>
+          <h3>India's First Navy</h3>
+          <p>
+            Recognising that whoever controls the sea controls the trade, Chhatrapati Shivaji Maharaj built India's first
+            organised navy. He constructed Sindhudurg and Vijaydurg, challenged the Portuguese and English
+            at sea, and seized Khanderi at the door of Bombay harbour. No Indian ruler before him had
+            thought this way about the ocean.
+          </p>
+        </div>
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9775;</div>
+          <h3>A Just Administration</h3>
+          <p>
+            Chhatrapati Shivaji Maharaj banned looting of civilians in war — an extraordinary rule in the 17th century.
+            He protected temples and mosques alike. He appointed men of talent regardless of caste or religion.
+            His navy included Muslim commanders; his personal bodyguard included men from every community.
+            Swarajya was for the people of the land — all of them.
+          </p>
+        </div>
+
+        <div class="Chhatrapati Shivaji Maharaj-fact-card">
+          <div class="Chhatrapati Shivaji Maharaj-fact-icon">&#9818;</div>
+          <h3>Crowned Chhatrapati</h3>
+          <p>
+            On June 6, 1674, at Raigad fort, Chhatrapati Shivaji Maharaj was crowned
+            <strong>Chhatrapati</strong> — Sovereign of the Realm. It was the first Hindu coronation in
+            the Deccan in centuries. His mother Jijabai, old and frail, came to watch.
+            She died twelve days later, having seen the fulfilment of everything she had prayed for.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="Chhatrapati Shivaji Maharaj-legacy-block">
+        <h3>The Forts</h3>
+        <p>
+          Chhatrapati Shivaji Maharaj built, captured, or strengthened over 360 forts across the Sahyadri mountains,
+          the Konkan coast, and the Deccan plateau. Each fort was not merely a military installation —
+          it was an administrative centre, a storehouse, a refuge for the people of the surrounding villages,
+          and a symbol of the idea that this land had rulers who were answerable to its people.
+        </p>
+        <p>
+          The forts were his infrastructure. They were what made Swarajya durable — not dependent on any
+          single battle or any single general, but distributed across hundreds of strongpoints that each had
+          to be taken individually. Aurangzeb spent 27 years in the Deccan trying. He could not finish the job.
+        </p>
+      </div>
+
+      <div class="Chhatrapati Shivaji Maharaj-legacy-block">
+        <h3>His Legacy and Impact on India</h3>
+        <p>
+          When Chhatrapati Shivaji Maharaj died in 1680, Aurangzeb believed Swarajya would die with him. It did not.
+          The Maratha Empire that grew from the seed Chhatrapati Shivaji Maharaj planted would, within a century, become the
+          largest power in India — controlling territory from the Khyber Pass in the northwest to Thanjavur
+          in the south, from Orissa in the east to the Arabian Sea in the west.
+        </p>
+        <p>
+          The Marathas were the power that finally ended Mughal dominance of the subcontinent.
+          By the mid-18th century, the Mughal Emperor in Delhi was effectively a pensioner of the Maratha
+          Confederacy. The British East India Company, in its final push for Indian dominance, identified
+          the Marathas — not the Mughals — as its primary adversary. Three Anglo-Maratha Wars were fought.
+          The British won the third, in 1818. It took them 138 years after Chhatrapati Shivaji Maharaj's death to finish what
+          Aurangzeb could not.
+        </p>
+        <p>
+          Beyond politics and territory, Chhatrapati Shivaji Maharaj's legacy is cultural and spiritual.
+          He demonstrated that a son of the Deccan soil — not a foreign dynasty, not a distant empire —
+          could protect, govern, and inspire the people of India. That idea outlasted every empire
+          that tried to erase it. It lives today in every fort on this map.
+        </p>
+        <blockquote class="Chhatrapati Shivaji Maharaj-quote">
+          "Do not think that this is a small thing I have done. Hindavi Swarajya — self-rule — is the will
+          of God. God is making me the instrument of his will."
+          <cite>— Chhatrapati Shivaji Maharaj</cite>
+        </blockquote>
+      </div>
+
+      <div class="Chhatrapati Shivaji Maharaj-timeline-strip">
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1630</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Born at Shivneri Fort</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1646</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Captures first fort at 16</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1659</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Defeats Afzal Khan at Pratapgad</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1664</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Sacks Surat; builds Sindhudurg</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1674</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Crowned Chhatrapati at Raigad</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1677</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Southern campaign; captures Gingee</span>
+        </div>
+        <div class="Chhatrapati Shivaji Maharaj-tl-item">
+          <span class="Chhatrapati Shivaji Maharaj-tl-year">1680</span>
+          <span class="Chhatrapati Shivaji Maharaj-tl-event">Dies at Raigad; legacy endures</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Fort Grid ─────────────────────────────────────────── -->
+  <div class="fort-grid-section">
+    <div class="fort-grid-header">
+      <h2>Forts</h2>
+      <span class="fort-count" id="fort-count"></span>
+    </div>
+
+    <div class="search-row">
+      <input type="search" id="fort-search" class="fort-search-input" placeholder="Search forts by name, district, or keyword…" autocomplete="off">
+    </div>
+
+    <div class="filter-row">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hill">Hill</button>
+        <button class="filter-btn" data-filter="island">Island</button>
+        <button class="filter-btn" data-filter="coastal">Coastal</button>
+      </div>
+      <div class="district-filter-wrap">
+        <label for="district-filter">District</label>
+        <select id="district-filter">
+          <option value="all">All Districts</option>
+        </select>
+      </div>
+      <div class="sort-filter-wrap">
+        <label for="sort-select">Sort</label>
+        <select id="sort-select">
+          <option value="default">Default</option>
+          <option value="az">A → Z</option>
+          <option value="za">Z → A</option>
+          <option value="altitude">Altitude ↑</option>
+          <option value="distance">Distance from Pune ↑</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="fort-cards">
+      <!-- Rendered by app.js -->
+    </div>
+  </div>
+
+  <!-- ── Other Places ─────────────────────────────────────── -->
+  <section id="other-places">
+    <div class="places-section">
+      <div class="places-section-header">
+        <h2>Other Places</h2>
+      </div>
+      <p class="places-section-intro">
+        Not every place of Maratha importance is a fort. These are the sacred mountains, ancient passes, cave temples,
+        battlefields, and historic sites woven into the same landscape as the forts — each carrying its own
+        chapter of the story.
+      </p>
+      <hr class="places-section-divider">
+
+      <div class="place-filter-bar">
+        <button class="place-filter-btn active" data-filter="all">All</button>
+        <button class="place-filter-btn" data-filter="temple">Temples</button>
+        <button class="place-filter-btn" data-filter="cave">Caves</button>
+        <button class="place-filter-btn" data-filter="battlefield">Battlefields</button>
+        <button class="place-filter-btn" data-filter="pilgrimage">Pilgrimage</button>
+        <button class="place-filter-btn" data-filter="peak">Peaks</button>
+        <button class="place-filter-btn" data-filter="historic_site">Historic Sites</button>
+        <button class="place-filter-btn" data-filter="pass">Passes</button>
+      </div>
+
+      <div id="place-cards">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p><strong>Swarajya</strong> &mdash; Maratha Forts Heritage Project</p>
+    <p class="footer-note">
+      Emergency contacts on fort pages are best-effort. Verify all numbers locally before visiting.<br>
+      Historical content sourced from published records. Always dial 112 in an emergency.
+    </p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLs=" crossorigin=""></script>
+
+  <!-- Data + App -->
+  <script src="js/forts-index.js"></script>
+  <script src="js/places-index.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    /* Stats and count are now handled inside app.js */
+  </script>
+
+</body>
+</html>

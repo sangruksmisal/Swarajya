@@ -1,0 +1,178 @@
+/* ============================================================
+   SWARAJYA — Other Places Detail Page Styles
+   Olive-green / teal accent instead of saffron / maroon.
+   ============================================================ */
+
+:root {
+  --place-green:       #3a6b3a;
+  --place-green-light: #4e9050;
+  --place-green-dim:   #2a4e2a;
+  --place-gold:        #c8a84b;
+}
+
+/* ── Place Hero ──────────────────────────────────────────────── */
+.place-hero {
+  background: linear-gradient(160deg, #1a2e1a 0%, #0f1f0f 60%, #1a2010 100%);
+  color: var(--white);
+  padding: 4rem 1.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.place-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233a6b3a' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+.place-hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.place-type-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7acc6a;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.place-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: var(--place-gold);
+  line-height: 1.15;
+  margin-bottom: 0.3rem;
+}
+.place-aka {
+  font-size: 0.9rem;
+  color: var(--parchment);
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+.place-altitude {
+  font-size: 0.95rem;
+  color: var(--parchment);
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ── Section Navigation ──────────────────────────────────────── */
+.place-section-nav {
+  position: sticky;
+  top: 52px;
+  z-index: 90;
+  background: var(--place-green-dim);
+  border-bottom: 2px solid var(--place-green);
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+.place-section-nav::-webkit-scrollbar { display: none; }
+.place-section-nav a {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  color: var(--parchment);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.place-section-nav a:hover,
+.place-section-nav a.active {
+  background: var(--place-green);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ── Place Sections ──────────────────────────────────────────── */
+.place-section {
+  padding: var(--section-pad);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.place-section + .place-section {
+  border-top: 1px solid var(--parchment-dark);
+}
+.place-section-alt {
+  background: var(--parchment-mid);
+}
+.place-section-dark {
+  background: #0f1f0f;
+  color: var(--parchment);
+  max-width: 100%;
+}
+.place-section-dark .section-title  { color: var(--place-gold); border-color: var(--place-green); }
+.place-section-dark .section-label  { color: #7acc6a; }
+.place-section-dark-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Override arch-card accent for place pages */
+.place-section .arch-card {
+  border-left-color: var(--place-green);
+}
+.place-section .arch-card-type {
+  color: var(--place-green);
+}
+.place-section .arch-card h3 {
+  color: var(--place-green-dim);
+}
+
+/* ── Access Steps ────────────────────────────────────────────── */
+.access-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.access-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.access-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--place-green);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.access-step p {
+  font-size: 0.92rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Section Labels & Titles (shared overrides) ─────────────── */
+.place-section .section-label { color: var(--place-green); }
+.place-section .section-title { border-color: var(--place-green); }
+.place-section .timeline::before {
+  background: linear-gradient(to bottom, var(--place-green), var(--place-green-dim));
+}
+.place-section .timeline-item::before {
+  background: var(--place-green);
+  box-shadow: 0 0 0 2px var(--place-green);
+}
+.place-section .timeline-year { color: var(--place-green-dim); }

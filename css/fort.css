@@ -1,0 +1,565 @@
+/* ============================================================
+   SWARAJYA — Fort Detail Page Styles
+   ============================================================ */
+
+/* ── Fort Hero ───────────────────────────────────────────────── */
+.fort-hero {
+  background: linear-gradient(160deg, var(--dark-stone-2) 0%, var(--dark-stone) 60%, #3d1f10 100%);
+  color: var(--white);
+  padding: 4rem 1.5rem 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.fort-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B00' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+.fort-hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.fort-type-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.fort-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: var(--gold);
+  line-height: 1.15;
+  margin-bottom: 0.3rem;
+}
+.fort-aka {
+  font-size: 0.9rem;
+  color: var(--parchment);
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+.fort-altitude {
+  font-size: 0.95rem;
+  color: var(--parchment);
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ── Section Navigation ──────────────────────────────────────── */
+.fort-section-nav {
+  position: sticky;
+  top: 52px;
+  z-index: 90;
+  background: var(--maroon);
+  border-bottom: 2px solid var(--saffron);
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  /* Fade hint on right edge so users know it scrolls */
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 40px), transparent 100%);
+  mask-image: linear-gradient(to right, black calc(100% - 40px), transparent 100%);
+}
+.fort-section-nav::-webkit-scrollbar { display: none; }
+.fort-section-nav a {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  color: var(--parchment);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.fort-section-nav a:hover,
+.fort-section-nav a.active {
+  background: var(--saffron);
+  color: var(--white);
+  text-decoration: none;
+}
+.fort-section-nav a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+}
+@media (max-width: 600px) {
+  .fort-section-nav { top: 48px; }
+  .fort-section-nav a { padding: 0.5rem 0.75rem; font-size: 0.72rem; }
+}
+
+/* ── Fort Sections ───────────────────────────────────────────── */
+.fort-section {
+  padding: var(--section-pad);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+.fort-section + .fort-section {
+  border-top: 1px solid var(--parchment-dark);
+}
+.fort-section-alt {
+  background: var(--parchment-mid);
+}
+.fort-section-dark {
+  background: var(--dark-stone);
+  color: var(--parchment);
+  max-width: 100%;
+  scroll-margin-top: 100px;
+}
+.fort-section-dark .section-title { color: var(--gold); border-color: var(--saffron); }
+.fort-section-dark .section-label { color: var(--saffron-light); }
+.fort-section-dark-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  scroll-margin-top: 100px;
+}
+
+/* ── Overview ────────────────────────────────────────────────── */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.overview-summary {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-medium);
+}
+@media (max-width: 700px) {
+  .overview-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Timeline ────────────────────────────────────────────────── */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.55rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--saffron), var(--maroon));
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  padding-left: 1.2rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--saffron);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--saffron);
+}
+.timeline-year {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--maroon);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+.timeline-event {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* ── Heroic Tale ─────────────────────────────────────────────── */
+.heroic-tale-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+.heroic-tale-body {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: var(--parchment);
+}
+.heroic-tale-body p { margin-bottom: 1.2rem; color: var(--parchment); }
+.heroic-quote {
+  border-left: 4px solid var(--gold);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  background: rgba(255,215,0,0.07);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold);
+}
+.heroic-quote .quote-translation {
+  font-size: 0.88rem;
+  color: var(--parchment);
+  font-style: normal;
+  margin-top: 0.3rem;
+  opacity: 0.8;
+}
+
+/* ── Architecture ────────────────────────────────────────────── */
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.arch-card {
+  background: var(--white);
+  border: 1px solid var(--parchment-dark);
+  border-left: 4px solid var(--saffron);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.arch-card-type {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+}
+.arch-card h3 {
+  font-size: 1rem;
+  color: var(--maroon);
+  margin: 0.2rem 0 0.5rem;
+}
+.arch-card p {
+  font-size: 0.88rem;
+  color: var(--text-medium);
+  margin: 0;
+  line-height: 1.6;
+}
+.arch-card .arch-direction {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-top: 0.3rem;
+}
+
+/* ── Visitor Info ────────────────────────────────────────────── */
+.visitor-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.visitor-card {
+  background: var(--white);
+  border: 1px solid var(--parchment-dark);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.visitor-card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.visitor-card-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 700;
+  display: block;
+}
+.visitor-card-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-stone);
+  margin-top: 0.2rem;
+  display: block;
+}
+.visitor-card-note {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+.advisory-box {
+  background: #fff8e6;
+  border: 1px solid #e6c200;
+  border-left: 4px solid #e6c200;
+  border-radius: var(--radius);
+  padding: 0.9rem 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #5a4200;
+}
+.advisory-box strong { color: #4a3000; }
+
+/* ── Emergency ───────────────────────────────────────────────── */
+.emergency-section {
+  background: #1a0505;
+  padding: var(--section-pad);
+  scroll-margin-top: 100px;
+}
+.emergency-section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  scroll-margin-top: 100px;
+}
+.emergency-section .section-title { color: #ff6b6b; border-color: #cc0000; }
+.emergency-section .section-label { color: #ff8c8c; }
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 700px) {
+  .emergency-grid { grid-template-columns: 1fr; }
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact-item {
+  background: #2a0808;
+  border: 1px solid #5a1010;
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+}
+.contact-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff8c8c;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.contact-number {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  display: block;
+}
+.contact-number a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact-number a:hover { color: var(--gold); }
+.contact-note {
+  font-size: 0.73rem;
+  color: #cc8888;
+  margin-top: 0.2rem;
+  display: block;
+  font-style: italic;
+}
+
+.medical-card {
+  background: #0a1a08;
+  border: 1px solid #1a4a18;
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+}
+.medical-card h3 {
+  color: #7acc6a;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+.medical-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  align-items: flex-start;
+}
+.medical-row-label {
+  color: #7acc6a;
+  font-weight: 700;
+  min-width: 80px;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.05rem;
+}
+.medical-row-value { color: #c8e6c4; line-height: 1.5; }
+.medical-note {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: #8aaa88;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.emergency-verify-note {
+  margin-top: 1.5rem;
+  background: #2a1a00;
+  border: 1px solid #5a3a00;
+  border-radius: var(--radius);
+  padding: 0.7rem 1rem;
+  font-size: 0.8rem;
+  color: #ccaa66;
+  font-style: italic;
+}
+
+/* ── Trekker's Guide ─────────────────────────────────────────── */
+.trek-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 700px) { .trek-layout { grid-template-columns: 1fr; } }
+
+.trek-landmarks {
+  list-style: none;
+  counter-reset: landmark;
+}
+.trek-landmarks li {
+  counter-increment: landmark;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--parchment-dark);
+  font-size: 0.9rem;
+  color: var(--text-medium);
+}
+.trek-landmarks li::before {
+  content: counter(landmark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.trek-landmarks li:last-child { border-bottom: none; }
+
+/* ── Gallery ─────────────────────────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.gallery-placeholder {
+  aspect-ratio: 4/3;
+  background: var(--parchment-dark);
+  border: 2px dashed var(--gold-muted);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.78rem;
+  text-align: center;
+  gap: 0.4rem;
+}
+.gallery-placeholder span { font-size: 1.8rem; opacity: 0.5; }
+
+/* ── New Hero Fields ──────────────────────────────────────────── */
+.fort-famous-for {
+  font-size: 1.05rem;
+  color: var(--gold);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+.badge-maratha-role {
+  background: var(--maroon);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 3px;
+}
+
+/* ── Nearby Forts ─────────────────────────────────────────────── */
+.nearby-forts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.nearby-fort-card {
+  background: var(--white);
+  border: 1px solid var(--parchment-dark);
+  border-left: 4px solid var(--saffron);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: block;
+  position: relative;
+}
+.nearby-fort-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  text-decoration: none;
+}
+.nearby-fort-card--locked {
+  opacity: 0.6;
+  filter: saturate(0.4);
+  pointer-events: none;
+}
+.nearby-fort-type {
+  font-size: 0.67rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.nearby-fort-name {
+  font-size: 1rem;
+  color: var(--maroon);
+  margin: 0 0 0.25rem;
+  font-family: var(--font-heading);
+}
+.nearby-fort-district {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
